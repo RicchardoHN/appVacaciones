@@ -15,7 +15,7 @@
       <li nz-submenu nzOpen nzTitle="Dashboard" nzIcon="dashboard">
         <ul>
           <li nz-menu-item nzMatchRouter>
-            <a routerLink="/welcome">Welcome</a>
+            <a>Welcome</a>
           </li>
           <li nz-menu-item nzMatchRouter>
             <a>Monitor</a>
@@ -25,10 +25,19 @@
           </li>
         </ul>
       </li>
-      <li nz-submenu nzOpen nzTitle="Form" nzIcon="form">
+      <li nz-submenu nzOpen nzTitle="Mantenimientos" nzIcon="form">
         <ul>
           <li nz-menu-item nzMatchRouter>
-            <a>Basic Form</a>
+            <a routerLink="/mantenimiento/cargo">Cargos</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/mantenimiento/empleado">Empleados</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/mantenimiento/vacaciones">Vacaciones</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/mantenimiento/codigo-trabajo">Codigo Trabajo</a>
           </li>
         </ul>
       </li>
@@ -38,10 +47,10 @@
     <nz-header>
       <div class="app-header">
         <span class="header-trigger" (click)="isCollapsed = !isCollapsed">
-            <span class="trigger"
+            <i class="trigger"
                nz-icon
                [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"
-            ></span>
+            ></i>
         </span>
       </div>
     </nz-header>
